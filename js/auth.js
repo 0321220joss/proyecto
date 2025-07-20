@@ -42,7 +42,7 @@ if (formLogin) {
             localStorage.setItem("usuarioActivo", JSON.stringify(usuarioEncontrado));
             const destino = usuarioEncontrado.rol === "admin"
                 ? "dashboard_admin.html"
-                : "dashboard_usuario.html";
+                : "index.html";
             window.location.href = destino;
         } else {
             alert("Credenciales incorrectas");
